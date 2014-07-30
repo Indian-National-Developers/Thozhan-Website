@@ -5,7 +5,7 @@ CSS Credit: http://www.templatemo.com
 body {
 	margin: 0;
 	padding: 0;
-	color: #d6e5e4;
+	color: #fff;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em; 
@@ -507,10 +507,10 @@ h6 {font-family: Times New Roman; color: #FFF; font-size: 14px; margin: 0 0 5px;
 }
 
 .sb_list li a { 
-	color: #d6e5e4; 
-	text-decoration: none; 
+	color: #fff; 
+	/**text-decoration: none; 
 	padding: 5px 0 5px 20px; 
-	background: url(../images/templatemo_list.png) no-repeat scroll 0 7px; 
+	background: url(../images/templatemo_list.png) no-repeat scroll 0 7px; */
 }
 
 .col_f { 
