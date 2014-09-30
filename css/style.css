@@ -655,7 +655,7 @@
 				#nav ul li a
 				{
 					display: block;
-					padding: 0.5em 1.5em 0.4em 2.5em;
+					padding: 0.5em 1.5em 0.4em 0.5em;
 					color: rgba(255,255,255,0.5);
 					text-decoration: none;
 					outline: 0;
@@ -678,8 +678,7 @@
 				
 				#nav ul li a:hover
 				{
-					background-color: grey;
-					border-radius: 0.25em;
+					background-color: #1b1f21;
 					color: white;
 					
 				}
@@ -692,9 +691,10 @@
 				
 				#nav ul li a img
 				{
-					float: left;
-					height: 1.5em;
-					width: 1.5em;
+					float: right;
+					height: 2.0em;
+					width: 2.0em;
+                    margin-left: 4px;
 				}
 
 					#nav ul li a span
@@ -709,8 +709,7 @@
 					
 					#nav ul li a span:hover
 					{
-						color: white;
-						font-size: 0.8em;
+						color: #fff;
 					}					
 
 						#nav ul li a span:before

@@ -82,11 +82,6 @@
 					padding-bottom: 0.5em;
 				}
 				
-					#nav ul li a span
-					{
-						padding-right: 2.25em;
-					}
-					
 						#nav ul li a span:before
 						{
 							left: 100%;
