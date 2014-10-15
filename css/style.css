@@ -84,7 +84,7 @@
 			font-size: 1.5em;
 		}
 		}
-
+	
 	header
 	{
 		margin: 0 0 2em 0;
@@ -162,6 +162,12 @@
 		margin-bottom: 2em;
 	}
 	
+	table td
+	{
+		text-align: ;
+	}
+	
+	
 	p
 	{
 		text-align:left;
@@ -207,6 +213,15 @@
 
 	/* Image */
 
+	
+		section div header img
+		{
+			height: 15em;
+			width: 15em;
+		}
+		
+		
+		
 		.image
 		{
 			display: inline-block;
@@ -215,8 +230,9 @@
 
 			.image img
 			{
-				display: block;
-				width: 100%;
+				
+				/*display: fixed;*/
+				width: 325px;
 			}
 
 			.image.avatar48
@@ -279,25 +295,7 @@
 					padding-left: 0.5em;
 				}
 
-			ul.icons
-			{
-				cursor: default;
-			}
-
-				ul.icons li
-				{
-					display: inline-block;
-				}
-
-					ul.icons a
-					{
-						display: inline-block;
-						width: 2em;
-						height: 2em;
-						line-height: 2em;
-						text-align: center;
-						border: 0;
-					}
+	
 
 		ol
 		{
@@ -552,7 +550,7 @@
 		width: 375px;
 		height: 100%;
 		color: #fff;
-		background: #222629 url('images/overlay.png');
+		background: #0e1a0c url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.1);
 		text-align: left;
 	}
@@ -668,33 +666,22 @@
 					
 				}
 				
-				#nav ul li a img
-				{
-					height: 1em;
-					width: 1em;
-				}
 				
 				
 				
 				#nav ul li a:hover
 				{
-					background-color: #1b1f21;
+					background-color: #090f08;
 					color: white;
 					
 				}
-				#nav ul li a img
-				{
-					float: left;
-					height: 1.25em;
-					width: 1.25em;
-				}
-				
+			
 				#nav ul li a img
 				{
 					float: right;
-					height: 2.0em;
-					width: 2.0em;
-                    margin-left: 4px;
+					height: 1.5em;
+					width: 1.5em;
+                    margin: 0.5em 0 0.5em 1em;
 				}
 
 					#nav ul li a span
@@ -706,7 +693,10 @@
 						color: silver;
 						text-align: right;
 					}
-					
+						#nav ul li a span b
+						{
+							color: white;
+						}
 					#nav ul li a span:hover
 					{
 						color: #fff;
@@ -776,6 +766,8 @@
 				margin-left: 0;
 			}
 
+			
+		
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -842,6 +834,7 @@
 
 			#main > section.three
 			{
+				
 				background-color: #ecf1f1;
 			}
 
