@@ -21,15 +21,19 @@
         <style>
 
             label {
-                display: inline-block; 
-                width: 46%;
-                min-width: 100px;   
-                text-align: right;
+                width: 46% !important;
+                min-width: 100px;
+                display: inline-block !important;
+                text-align:right !important;
+                margin: 0px !important;
+
             }
 
             input[type='text'] {
+                width: 25% !important;
                 height: 28px;
                 font-size: 16px;
+                display: inline !important;
             }
 
         </style>
@@ -118,44 +122,51 @@
 
                             <div style="display:block; text-align:left">
 
-                                <form action="./registration/registration.php" method="post">
+                                <form action="registration/registration.php" method="post">
+
                                 <label>Name*</label>
                                 <input type="text" name="name"> <br/>
 
                                 <label>Gender*</label>
-                                <input type="radio" name="sex" value="male" checked>Male &nbsp&nbsp<input type="radio" name="sex" value="female">Female<br>
+                                <input type="radio" name="gender" value="male" checked>Male 
+                                <input type="radio" name="gender" value="female">Female<br>
 
                                 <label>Blood Group*</label>
-                                <input type="text" name="blood"> <br/>
+                                <input type="text" name="bloodGroup"> <br/>
 
-                                <label>Address*</label>
+                                <label>Address</label>
                                 <input type="text" name="address"><br/>
 
-                                <label>City*</label>
+                                <label>City</label>
                                 <input type="text" name="city"><br/>
 
-                                <label>Pincode*</label>
-                                <input type="text" name="pin"><br/>
+                                <label>Pincode</label>
+                                <input type="text" name="pincode"><br/>
 
-                                <label>Your Interests</label>
-                                <input type="checkbox" value="Traffic awareness campaign" name="g1">Traffic awareness campaign</input><br/>
+                                <label>Your Interests*</label>
+                                <input type="checkbox" value="TAC" name="interests[]">Traffic awareness campaign</input><br/>
                                 <label></label>
-                                <input type="checkbox" value="Anbu Illam visit" name="g1">Anbu Illam visit</input><br/>
+                                <input type="checkbox" value="Anbu Illam" name="interests[]">Anbu Illam visit</input><br/>
                                 <label></label>
-                                <input type="checkbox" value="Speech Workshop" name="g1">Speech Workshop</input><br/>
+                                <input type="checkbox" value="Speech Workshop" name="interests[]">Speech Workshop</input><br/>
                                 <label></label>
-                                <input type="checkbox" value="Indian National Developers" name="g1">Code for the Nation</input><br/>
+                                <input type="checkbox" value="Code" name="interests[]">Code for the Nation</input><br/>
+
                                 <label>Phone No.* </label>
                                 <input type="text" name="phone" ><br/>
-                                <label>Mail ID*</label>
-                                <input type="text" name="mail" ><br/>
-                                <label>Facebook<b>(Profile Link or Profile name)</b></label>
-                                <input type="text" name="fb"><br/>
-                                <label>Possible time to volunteer</label>
-                                <input type="text" name="time"><br/>
 
-                                <input type="button" value="Register" style="margin-left:38%"/>
-                                </form>
+                                <label>Mail ID*</label>
+                                <input type="text" name="mailID" ><br/>
+
+                                <label>Facebook<b>(Profile Link or Profile name)</b></label>
+                                <input type="text" name="facebook"><br/>
+
+                                <label>Possible time to volunteer (in a week)</label>
+                                <input type="text" name="timeToVolunteer"><br/>
+
+                                <input type="submit" value="Register" style="margin-left:38%"/>
+
+                                <!-- </form> -->
 
                             </div>
                             <br/>

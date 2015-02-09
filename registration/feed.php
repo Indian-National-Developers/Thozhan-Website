@@ -4,8 +4,8 @@
 
   $dd = '|||';
   $TestFeed = new FeedWriter(RSS2);
-  $TestFeed->setTitle('SPI Registration');
-  $TestFeed->setLink('http://sattapanchayat.org/');
+  $TestFeed->setTitle('Thozhan Volunteers"');
+  $TestFeed->setLink('http://thozhan.org/');
   $TestFeed->setDescription(
         'nothing much'
   );
@@ -20,21 +20,22 @@
 
       $newItem = $TestFeed->createNewItem();
       $newItem->setTitle($row['registration'] . $counter);
-      $newItem->setLink('http://sattapanchayat.org/' . $counter . '.php');
+      $newItem->setLink('http://thozhan.org/' . $counter . '.php');
       $desc = $row['id'] . ' ' .  $dd . ' ';
       $desc = $desc . $row['name'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['mailID'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['address'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['town'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['city'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['state'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['gender'] . ' ' .  $dd . ' ';
       $desc = $desc . $row['bloodGroup'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['education'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['address'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['city'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['pincode'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['interests'] . ' ' .  $dd . ' ';
       $desc = $desc . $row['phone'] . ' ' .  $dd . ' ';
-      $desc = $desc . $row['donation'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['mailID'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['facebook'] . ' ' .  $dd . ' ';
+      $desc = $desc . $row['timeToVolunteer'] . ' ' .  $dd . ' ';
       $newItem->setDescription($desc);
 
-      $newItem->setDate($row['addedOn']);
+      $newItem->setDate($row['createdOn']);
       $TestFeed->addItem($newItem);
   }
 
