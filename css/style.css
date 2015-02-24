@@ -14,7 +14,7 @@
 	
 	img
 	{
-		width: 4em;
+		width: 10em;
 		height: 10em;
 	}
 	body
@@ -216,8 +216,8 @@
 	
 		section div header img
 		{
-			height: 15em;
-			width: 15em;
+			height: 10em;
+			width: 10em;
 		}
 		
 		
@@ -238,7 +238,7 @@
 			.image.avatar48
 			{
 				width: 196px;
-				height: 128px;
+				height: 100px;
 			}
 
 				.image.avatar48 img
