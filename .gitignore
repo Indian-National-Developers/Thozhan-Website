@@ -122,3 +122,6 @@ debian/ofbiz.substvars
 debian/ofbiz/
 debian/stamps/
 debian/orig-work
+
+#Webstorm Temp
+.idea/
